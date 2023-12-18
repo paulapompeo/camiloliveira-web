@@ -197,12 +197,12 @@ p.modal-content {
 
 @media(max-width: 480px) {
   h2.subtitle {
-    font-size: 72px;
+    font-size: 64px;
   }
 
   .section-title {
-    margin-top: -40px;
-    font-size: 72px;
+    margin-top: -32px;
+    font-size: 52px;
   }
 
   .right-side-content p {
