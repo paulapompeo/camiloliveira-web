@@ -1,0 +1,211 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Section-specific Styles */
+.first-section {
+  background-image: url('after_sex_shirt.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+}
+
+h1 {
+  position: fixed;
+  font-size: 40px;
+  padding-top: 20px;
+  font-weight: 500;
+  font-family: Helvetica;
+  z-index: 9999;
+  left: 50%; /* Position at horizontal center */
+  transform: translate(-50%); /* Adjust to center */
+}
+
+/* Section Styles */
+section {
+  position: relative;
+  text-align: center;
+  color: black;
+}
+
+.fixed-btns {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 9999;
+}
+
+.fixed-btn {
+  color: black;
+  border: none;
+  background: transparent;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+h2.subtitle {
+  margin-top: 200px;
+  color: blue;
+  text-align: center;
+  font-size: 150px;
+  font-family: Times;
+  font-style: italic;
+  transform: rotate(-30deg);
+  display: inline-block; 
+}
+
+.btns-container {
+  margin-top: 24px;
+  margin-left: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 4px;
+}
+
+.simple-btn {
+  color: black;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  cursor: pointer;
+  font-family: Times;
+}
+
+.section-title {
+  color: blue;
+  font-size: 96px;
+  margin-left: 48px;
+  font-family: Times;
+  font-style: italic;
+  font-weight: 500;
+  text-align: left;
+  margin-top: 84px;
+  margin-bottom: 48px;
+}
+
+/* Basic styling for the container */
+.container {
+  display: flex;
+  margin-top: 48px;
+}
+
+/* Style for the left side (image) */
+.left-side {
+  flex: 1;
+}
+
+.left-side img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Style for the right side (text) */
+.right-side {
+  flex: 1;
+}
+
+.right-side-content p {
+  margin-right: 200px;
+  margin-left: 48px;
+  margin-bottom: 16px;
+  font-size: 20px;
+  font-family: Times;
+}
+
+/* Estilos para o modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(10px);
+  z-index: 9999;
+  overflow-y: auto; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.modal-wrapper {
+  color: #000;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 100%;
+  height: 100%; 
+  text-align: justify;
+  font-size: 28px;
+}
+
+p.modal-content {
+  padding-top: 40px;
+}
+
+.fechar {
+  color: #000;
+  font-size: 36px;
+  font-weight: bold;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 16px;
+    margin-top: 0;
+  }
+
+  h2.subtitle {
+    font-size: 96px;
+  }
+
+  .left-side,
+  .right-side {
+    width: 100%;
+  }
+
+  .section-title {
+    margin-top: -52px;
+    margin-left: 0;
+    margin-bottom: 8px;
+  }
+  
+  .right-side-content p {
+    margin-left: 0;
+  }
+
+  .btns-container {
+    margin-left: 0;
+  }
+}
+
+@media(max-width: 480px) {
+  h2.subtitle {
+    font-size: 72px;
+  }
+
+  .section-title {
+    margin-top: -40px;
+    font-size: 72px;
+  }
+
+  .right-side-content p {
+    margin-right: 0;
+  }
+}
