@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Helvetica;
 }
 
 /* Section-specific Styles */
@@ -103,7 +104,6 @@ h2.subtitle {
 /* Basic styling for the container */
 .container {
   display: flex;
-  margin-top: 48px;
 }
 
 /* Style for the left side (image) */
@@ -136,7 +136,7 @@ h2.subtitle {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   z-index: 9999;
@@ -149,36 +149,57 @@ h2.subtitle {
 
 .modal-wrapper {
   color: #000;
-  padding: 20px;
+  padding: 0px 120px 0;
   border-radius: 5px;
   max-width: 100%;
-  height: 100%; 
+  height: 100vh;
   text-align: justify;
   font-size: 28px;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper-sm {
+  margin-top: 72px;
+}
+
+h3.modal-title {
+  text-align: center;
+  font-size: 72px;
+  font-weight: 500;
+}
+
+h3.modal-title-sm {
+  font-size: 24px;
+  font-weight: 400;
 }
 
 p.modal-content {
+  font-size: 48px;
+}
+
+p.modal-content-sm {
+  margin-top: 24px;
+  font-size: 18px;
+}
+
+p.modal-content + p {
   padding-top: 40px;
 }
 
 .modal-wrapper img {
   display: block;
-  margin: auto;
-  width: 100%;
-  height: 100%; 
+  margin: -140px auto;
+  max-width: 600px;
 }
 
-.fechar {
+.close {
   color: #000;
-  font-size: 36px;
-  font-weight: bold;
+  font-size: 72px;
+  font-weight: 500;
   cursor: pointer;
-  position: absolute;
-  top: 10px;
-  right: 10px;
+  text-align: right;
 }
-
-
 
 /* Media query for mobile responsiveness */
 @media (max-width: 768px) {
@@ -225,4 +246,46 @@ p.modal-content {
   .right-side-content p {
     margin-right: 0;
   }
+
+  .container {
+    margin-bottom: 52px;
+  }
+
+  .modal-wrapper {
+    color: #000;
+    padding: 20px;
+    text-align: justify;
+    font-size: 28px;
+  }
+
+  h3.modal-title {
+    text-align: left;
+    font-size: 40px;
+  }
+
+  p.modal-content {
+    padding-top: 40px;
+    font-size: 20px;
+  } 
+
+  p.modal-content + p {
+    padding-top: 0;
+  } 
+
+
+  .modal-wrapper img {
+    display: block;
+    margin: 0px auto;
+    max-width: 380px;
+  }
+
+  .close {
+    color: #000;
+    font-size: 36px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }  
 }
