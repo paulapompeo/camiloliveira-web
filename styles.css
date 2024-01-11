@@ -16,7 +16,7 @@
 
 h1 {
   position: fixed;
-  font-size: 40px;
+  font-size: 50px;
   padding-top: 20px;
   font-weight: 500;
   font-family: Helvetica;
@@ -46,10 +46,11 @@ section {
   color: black;
   border: none;
   background: transparent;
-  font-size: 24px;
+  font-size: 26px;
   cursor: pointer;
 }
 
+/* substituir pela imagem */
 h2.subtitle {
   margin-top: 200px;
   color: blue;
@@ -76,12 +77,12 @@ h2.subtitle {
   background: transparent;
   font-size: 20px;
   cursor: pointer;
-  font-family: Times;
+  font-family: Helvetica;
 }
 
 .section-title {
   color: blue;
-  font-size: 96px;
+  font-size: 80px;
   margin-left: 48px;
   font-family: Times;
   font-style: italic;
@@ -118,7 +119,7 @@ h2.subtitle {
   margin-left: 48px;
   margin-bottom: 16px;
   font-size: 20px;
-  font-family: Times;
+  font-family: Helvetica;
 }
 
 /* Estilos para o modal */
