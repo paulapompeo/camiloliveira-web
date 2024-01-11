@@ -234,6 +234,9 @@ p.modal-content + p {
 }
 
 @media(max-width: 480px) {
+  h1 { 
+    font-size: 40px;
+  }
   h2.subtitle {
     font-size: 64px;
   }
