@@ -48,6 +48,14 @@ section {
   background: transparent;
   font-size: 26px;
   cursor: pointer;
+  font-family: Helvetica;
+}
+
+.fixed-anchor {
+  color: black;
+  font-size: 26px;
+  font-family: Helvetica;
+  text-decoration: none;
 }
 
 /* substituir pela imagem */

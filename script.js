@@ -1,5 +1,4 @@
 // BUTTONS
-const contactBtn = document.getElementById("contact-btn")
 const aboutBtn = document.getElementById("about-btn")
 const shippingBtn = document.getElementById("shipping-return")
 const sizeGuideBtn = document.getElementById("size-guide")
@@ -8,10 +7,6 @@ const sizeGuideBtn = document.getElementById("size-guide")
 const aboutModal = document.getElementById('about-modal')
 const shippingModal = document.getElementById('shipping-modal')
 const sizeGuideModal = document.getElementById('size-guide-modal')
-
-contactBtn.addEventListener('click', function() {
-  console.log("Botão Esquerda clicado!");
-});
 
 aboutBtn.addEventListener('click', function() {
   aboutModal.style.display = 'block';
