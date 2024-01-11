@@ -265,13 +265,16 @@ p.modal-content + p {
 
   p.modal-content {
     padding-top: 40px;
-    font-size: 20px;
+    font-size: 28px;
+  } 
+
+  p.modal-content-sm {
+    font-size: 18px;
   } 
 
   p.modal-content + p {
     padding-top: 0;
   } 
-
 
   .modal-wrapper img {
     display: block;
