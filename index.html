@@ -14,11 +14,6 @@
   <section class="first-section">
     <div class="content">
       <h1>CAMILOLIVEIRA</h1>
-      <div class="content-subtitle">
-        <h2 class="subtitle">After</h2>
-        <h2 class="subtitle">Sex</h2>
-        <h2 class="subtitle">Shirt</h2>
-      </div>
     </div>
     <div class="fixed-btns">
       <a href="mailto:mail@camiloliveira.com" class="fixed-anchor">CONTACT</a>
@@ -26,11 +21,22 @@
     </div>
   </section>
 
-  <!-- SECOND SECTION -->
+  <!-- THIRD SECTION - TEST FOR SLIDESHOW -->
   <div class="container second-section">
     <div class="left-side">
-      <!-- TODO: SLIDE SHOW -->
-      <img src="after-sex-white.jpg" alt="Image">
+      <div id="slideshow-container">
+        <div class="slide fade">
+            <img src="pink.jpeg" alt="Camisa - Ângulo 1">
+        </div>
+        <!-- TODO: for slide show -->
+        <!-- <div class="slide fade">
+            <img src="camisa-angulo2-vermelho.jpg" alt="Camisa - Ângulo 2">
+        </div> -->
+
+        <!-- TODO: for slide show -->   
+        <!-- <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button> -->
+    </div>
     </div>
     <div class="right-side">
       <h2 class="section-title">After Sex Shirt</h2>
@@ -43,14 +49,17 @@
           Mother-of-pearl buttons<br>
           Single-button cuffs</p>
   
-        <p>
-          Pink - 100% Virgin Wool - €210<br>
-          Yellow - 63% Linen 37% Silk - €210<br>
-          Green - 100% Viscose - €180<br>
-          Purple - 60%Silk 40% Viscose - €210<br>
-          Navy - Cashmere - €380,00<br>
-          White Stripes Black - 100% Cotton - €180,00<br>
-        </p>
+          <div id="color-selector">
+            <select id="color" onchange="changeColor()">
+              <option value="pink">Pink - 100% Virgin Wool - €210</option>
+              <option value="yellow">Yellow - 63% Linen 37% Silk - €210</option>
+              <option value="green">Green - 100% Viscose - €180</option>
+              <option value="purple"> Purple - 60%Silk 40% Viscose - €210</option>
+              <option value="black">Navy - Cashmere - €380,00</option>
+              <option value="white">Navy - Cashmere - €380,00</option>
+              <option value="white-stripes-black">White Stripes Black - 100% Cotton - €180,00</option>
+            </select>
+          </div>
   
         <p>
           All handmade in small quantities in Italy<br> Delivery expected by half December.

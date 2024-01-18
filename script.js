@@ -54,3 +54,39 @@ document.addEventListener('keydown', function(event) {
 });
 
 
+// SLIDE SHOW
+let currentSlide = 0;
+const slides = document.querySelectorAll('.slide');
+const colorSelector = document.getElementById('color');
+
+function showSlide(index) {
+    if (index >= slides.length) {
+        currentSlide = 0;
+    } else if (index < 0) {
+        currentSlide = slides.length - 1;
+    } else {
+        currentSlide = index;
+    }
+
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = 'none';
+    }
+
+    slides[currentSlide].style.display = 'block';
+}
+
+function changeSlide(n) {
+  showSlide(currentSlide + n);
+}
+
+function changeColor() {
+    const selectedColor = colorSelector.value;
+    for (let i = 0; i < slides.length; i++) {
+      // slides[i].firstElementChild.src = `camisa-angulo${i + 1}-${selectedColor}.jpg`;
+        slides[i].firstElementChild.src = `${selectedColor}.jpeg`;
+    }
+}
+
+// Inicie o slideshow e adicione a lógica de troca de cor
+showSlide(currentSlide);
+colorSelector.addEventListener('change', changeColor);

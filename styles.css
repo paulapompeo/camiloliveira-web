@@ -6,13 +6,70 @@
   font-family: Helvetica;
 }
 
+#slideshow-container {
+  /* max-width: 800px; */
+  /* DEIXAR AQUI */
+  /* position: relative; */
+  margin: auto;
+}
+
+.slide {
+  display: none;
+}
+
+img {
+  width: 100%;
+}
+
+#color-selector {
+  margin-right: 200px;
+  margin-left: 48px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  font-size: 1.15rem;
+  background-color: #fff;
+  border: 2px solid black;
+  color: #000;
+  cursor: pointer;
+  width: 100%;
+  padding: 12px;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    padding: 15px;
+    background-color: transparent;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
 /* Section-specific Styles */
+/* background-image: url('after_sex_shirt.png'); */
+/* background-image: url('AfterSex-landing-1.png'); */
 .first-section {
-  background-image: url('after_sex_shirt.png');
+  background-image: url('camiloliveira_aftersex_landing.png');
   background-size: cover;
   background-position: center;
   height: 100vh;
-  width: 100%;
+  /* width: 100%; */
 }
 
 h1 {
@@ -99,6 +156,7 @@ h2.subtitle {
   text-align: left;
   margin-top: 84px;
   margin-bottom: 48px;
+  z-index: 99999;
 }
 
 /* Basic styling for the container */
@@ -211,6 +269,11 @@ p.modal-content + p {
     margin-top: 0;
   }
 
+  #color-selector {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
   h2.subtitle {
     font-size: 96px;
   }
@@ -236,9 +299,21 @@ p.modal-content + p {
 }
 
 @media(max-width: 480px) {
+  .first-section {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('camiloliveira_aftersex_landing_mobile.png');
+  }
+
+  #color-selector {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
   h1 { 
     font-size: 40px;
   }
+
   h2.subtitle {
     font-size: 64px;
   }
