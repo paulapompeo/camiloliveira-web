@@ -295,6 +295,7 @@ p.modal-content + p {
 
   .btns-container {
     margin-left: 0;
+    margin-bottom: 100px;
   }
 }
 
