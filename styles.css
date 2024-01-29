@@ -7,9 +7,7 @@
 }
 
 #slideshow-container {
-  /* max-width: 800px; */
-  /* DEIXAR AQUI */
-  /* position: relative; */
+  position: relative;
   margin: auto;
 }
 
@@ -29,21 +27,30 @@ img {
 }
 
 select {
-  appearance: none;
-  -webkit-appearance: none;
-  font-size: 1.15rem;
-  background-color: #fff;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -webkit-padding-end: 20px;
+  -moz-padding-end: 20px;
+  -webkit-padding-start: 2px;
+  -moz-padding-start: 2px;
+  background-repeat: no-repeat;
   border: 2px solid black;
   color: #000;
-  cursor: pointer;
+  font-size: 1.15rem;
+  margin: 0;
   width: 100%;
+  overflow: hidden;
   padding: 12px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .prev,
 .next {
     position: absolute;
-    top: 50%;
+    top: 40%;
     transform: translateY(-50%);
     font-size: 18px;
     padding: 15px;
@@ -116,6 +123,14 @@ section {
   text-decoration: none;
 }
 
+.instagram-anchor {
+  margin-top: 40px;
+  color: black;
+  font-size: 48px;
+  font-family: Helvetica;
+  text-decoration: none;
+}
+
 /* substituir pela imagem */
 h2.subtitle {
   margin-top: 200px;
@@ -156,7 +171,7 @@ h2.subtitle {
   text-align: left;
   margin-top: 84px;
   margin-bottom: 48px;
-  z-index: 99999;
+  position: relative;
 }
 
 /* Basic styling for the container */
@@ -213,7 +228,6 @@ h2.subtitle {
   border-radius: 5px;
   max-width: 100%;
   height: 100vh;
-  text-align: justify;
   font-size: 28px;
   display: flex;
   flex-direction: column;
@@ -350,6 +364,10 @@ p.modal-content + p {
     font-size: 28px;
   } 
 
+  .instagram-anchor {
+    font-size: 28px;
+  }
+
   p.modal-content-sm {
     font-size: 18px;
   } 
@@ -373,4 +391,13 @@ p.modal-content + p {
     top: 20px;
     right: 20px;
   }  
+
+  .prev,
+  .next {
+    top: 50%;
+  }
+
+  #size-guide-modal img {
+    margin: auto;
+  }
 }
