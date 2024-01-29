@@ -27,8 +27,8 @@ img {
 }
 
 select {
-  -webkit-appearance: button;
-  -moz-appearance: button;
+  /* -webkit-appearance: button;
+  -moz-appearance: button; */
   -webkit-user-select: none;
   -moz-user-select: none;
   -webkit-padding-end: 20px;
@@ -68,9 +68,6 @@ select {
     right: 0;
 }
 
-/* Section-specific Styles */
-/* background-image: url('after_sex_shirt.png'); */
-/* background-image: url('AfterSex-landing-1.png'); */
 .first-section {
   background-image: url('camiloliveira_aftersex_landing.png');
   background-size: cover;
