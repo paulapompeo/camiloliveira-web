@@ -52,7 +52,6 @@ select {
 .next {
     position: absolute;
     top: 40%;
-    transform: translateY(100%);
     font-size: 18px;
     padding: 15px;
     background-color: transparent;
