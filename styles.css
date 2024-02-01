@@ -73,7 +73,6 @@ select {
   background-size: cover;
   background-position: center;
   height: 100vh;
-  /* width: 100%; */
 }
 
 h1 {
@@ -203,7 +202,7 @@ h2.subtitle {
   font-family: Helvetica;
 }
 
-/* Estilos para o modal */
+/* Style for the modal */
 .modal {
   position: fixed;
   top: 0;
