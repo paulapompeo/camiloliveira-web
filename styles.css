@@ -9,6 +9,7 @@
 #slideshow-container {
   position: relative;
   margin: auto;
+  transform: translateY(-5%);
 }
 
 .slide {
@@ -51,7 +52,7 @@ select {
 .next {
     position: absolute;
     top: 40%;
-    transform: translateY(-50%);
+    transform: translateY(100%);
     font-size: 18px;
     padding: 15px;
     background-color: transparent;
@@ -315,6 +316,10 @@ p.modal-content + p {
     background-size: contain;
     background-repeat: no-repeat;
     background-image: url('camiloliveira_aftersex_landing_mobile.png');
+  }
+
+  #slideshow-container {
+    transform: translateY(0);
   }
 
   #color-selector {
