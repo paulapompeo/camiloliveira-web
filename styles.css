@@ -158,8 +158,8 @@ h2.subtitle {
   font-family: Helvetica;
 }
 
-.simple-btn a {
-  text-decoration: none;
+a.simple-btn  {
+  text-decoration: none!important;
 }
 
 .section-title {
