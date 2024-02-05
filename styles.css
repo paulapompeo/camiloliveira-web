@@ -158,6 +158,10 @@ h2.subtitle {
   font-family: Helvetica;
 }
 
+.simple-btn a {
+  text-decoration: none;
+}
+
 .section-title {
   color: blue;
   font-size: 70px;
