@@ -86,11 +86,3 @@ function changeColor() {
 
 showSlide(currentSlide);
 colorSelector.addEventListener('change', changeColor);
-
-document.addEventListener("DOMContentLoaded", function () {
-  var firstSection = document.querySelector(".first-section");
-
-  firstSection.addEventListener("click", function () {
-    window.location.href = "#second-section";
-  });
-});
