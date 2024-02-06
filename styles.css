@@ -6,6 +6,10 @@
   font-family: Helvetica;
 }
 
+body {
+  background-color: "#FFF";
+}
+
 #slideshow-container {
   position: relative;
   margin: auto;
