@@ -13,6 +13,7 @@ body {
 #slideshow-container {
   position: relative;
   margin: auto;
+  overflow: hidden;
 }
 
 .slide {
@@ -21,6 +22,9 @@ body {
 
 img {
   width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
 }
 
 #color-selector {
