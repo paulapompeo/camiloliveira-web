@@ -159,7 +159,17 @@ h2.subtitle {
 }
 
 a.simple-btn  {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
   text-decoration: none!important;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(0, 0, 255); /* Blue background color */
+  color: #ffffff; /* White text color */
+  
 }
 
 .section-title {
