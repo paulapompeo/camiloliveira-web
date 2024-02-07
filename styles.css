@@ -108,13 +108,18 @@ section {
   color: black;
 }
 
-.fixed-btns {
+.fixed-btns-left {
   position: fixed;
-  width: 100%;
   bottom: 0;
   padding: 20px;
-  display: flex;
-  justify-content: space-between;
+  z-index: 9999;
+}
+
+.fixed-btns-right {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 20px;
   z-index: 9999;
 }
 
