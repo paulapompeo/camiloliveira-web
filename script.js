@@ -75,11 +75,7 @@ function changeSlide(n) {
   const slides = shirts[currentColor];
 
   // Update the slide index
-  if (n > 0) {
-    currentSlide = (currentSlide + 1) % slides.length; // Move forward
-  } else {
-    currentSlide = (currentSlide - 1 + slides.length) % slides.length; // Move backward
-  }
+  currentSlide = (currentSlide + n + slides.length) % slides.length;
 
   // Change the image in the slideshow container
   const imgElement = document.querySelector('#slideshow-container .slide img');
@@ -94,7 +90,6 @@ function changeSlide(n) {
   } else if (currentSlide === slides.length - 1 && n < 0) {
     // Handle reverse navigation correctly to switch color
     if (currentColor === allColors[0]) {
-      // If at the first color and going backward, go to the last slide of the last color
       colorIndex = allColors.length - 1; // Move to last color
       currentColor = allColors[colorIndex];
       currentSlide = shirts[currentColor].length - 1; // Go to the last slide of the new color
@@ -162,21 +157,37 @@ document.querySelector('.next').addEventListener('click', function() {
 
 // Swipe functionality for touchscreen devices
 let touchStartX = 0;
+let isSwiping = false; // Flag to prevent multiple swipes during an ongoing swipe
+const swipeThreshold = 50; // Minimum distance to consider a swipe
+const swipeCooldown = 300; // Cooldown period in milliseconds after a swipe
+let lastSwipeTime = 0; // Track the time of the last swipe
 
 const slideshowContainer = document.getElementById('slideshow-container');
 
 slideshowContainer.addEventListener('touchstart', function(event) {
+  if (isSwiping) return; // Prevent swiping if already in progress
   touchStartX = event.touches[0].clientX; // Store the initial touch position
 });
 
 slideshowContainer.addEventListener('touchmove', function(event) {
+  if (isSwiping) return; // Prevent swiping if already in progress
   const moveX = event.touches[0].clientX;
-  const threshold = 50; // Minimum distance to consider a swipe
 
-  if (touchStartX - moveX > threshold) {
-    changeSlide(1); // Swipe left
-  } else if (moveX - touchStartX > threshold) {
-    changeSlide(-1); // Swipe right
+  if (Math.abs(touchStartX - moveX) > swipeThreshold) {
+    isSwiping = true; // Mark as swiping
+    const swipeDirection = touchStartX - moveX > 0 ? 1 : -1; // Determine swipe direction
+    const currentTime = Date.now();
+
+    // Check if enough time has passed since the last swipe
+    if (currentTime - lastSwipeTime >= swipeCooldown) {
+      changeSlide(swipeDirection); // Change slide based on swipe direction
+      lastSwipeTime = currentTime; // Update the last swipe time
+    }
+    
+    // Reset the flag to allow new swipes after the move
+    setTimeout(() => {
+      isSwiping = false; // Reset swiping flag after a short delay
+    }, swipeCooldown);
   }
 });
 
