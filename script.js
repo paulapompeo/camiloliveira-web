@@ -161,21 +161,21 @@ document.querySelector('.next').addEventListener('click', function() {
 });
 
 // Swipe functionality for touchscreen devices
-let startX;
+let touchStartX = 0;
 
 const slideshowContainer = document.getElementById('slideshow-container');
 
 slideshowContainer.addEventListener('touchstart', function(event) {
-  startX = event.touches[0].clientX; // Store the initial touch position
+  touchStartX = event.touches[0].clientX; // Store the initial touch position
 });
 
 slideshowContainer.addEventListener('touchmove', function(event) {
   const moveX = event.touches[0].clientX;
   const threshold = 50; // Minimum distance to consider a swipe
 
-  if (startX - moveX > threshold) {
+  if (touchStartX - moveX > threshold) {
     changeSlide(1); // Swipe left
-  } else if (moveX - startX > threshold) {
+  } else if (moveX - touchStartX > threshold) {
     changeSlide(-1); // Swipe right
   }
 });
