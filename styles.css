@@ -84,7 +84,7 @@ select {
 }
 
 .first-section {
-  background-image: url('camiloliveira_aftersex_landing.png');
+  background-image: url('camiloliveira_landing_freelancer_web.png');
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -151,7 +151,7 @@ section {
 /* substituir pela imagem */
 h2.subtitle {
   margin-top: 200px;
-  color: blue;
+  color: rgb(255, 0, 0);
   text-align: center;
   font-size: 150px;
   font-family: Times;
@@ -187,14 +187,14 @@ a.simple-btn  {
   cursor: pointer;
   border: none;
   border-radius: 5px;
-  background-color: rgb(0, 0, 255); /* Blue background color */
+  background-color: rgb(255, 0, 0); /* Blue background color */
   color: #ffffff; /* White text color */
   
 }
 
 .section-title {
-  color: blue;
-  font-size: 70px;
+  color: rgb(255, 0, 0);
+  font-size: 60px;
   margin-left: 48px;
   font-family: Times;
   font-style: italic;
@@ -348,7 +348,7 @@ p.modal-content + p {
   .first-section {
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url('camiloliveira_aftersex_landing_mobile.png');
+    background-image: url('camiloliveira_landing_freelancer_mobile.png');
 
   }
   

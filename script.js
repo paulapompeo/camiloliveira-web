@@ -80,7 +80,7 @@ function changeSlide(n) {
 function changeColor() {
     const selectedColor = colorSelector.value;
     for (let i = 0; i < slides.length; i++) {
-        slides[i].firstElementChild.src = `${selectedColor}-${i + 1}.png`;
+        slides[i].firstElementChild.src = `${selectedColor}-${i + 1}.jpg`;
     }
 }
 
