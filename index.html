@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CAMILOLIVEIRA</title>
@@ -9,163 +9,167 @@
 
     <meta property="og:image" content="thumbnail.png">
     <meta property="og:image:width" content="1200">
-    <!-- Largura da imagem em pixels -->
     <meta property="og:image:height" content="630">
-    <!-- Altura da imagem em pixels -->
-
-  </head>
-  <body>
+</head>
+<body>
     <!-- FIRST SECTION -->
     <section class="first-section">
-      <div class="content">
-        <h1>CAMILOLIVEIRA</h1>
-      </div>
-      <div class="fixed-btns-left">
-        <a href="mailto:mail@camiloliveira.com" class="fixed-anchor">CONTACT</a>
-      </div>
-      <div class="fixed-btns-right">
-        <button id="about-btn" class="fixed-btn">ABOUT</button>
-      </div>
+        <div class="content">
+            <h1>CAMILOLIVEIRA</h1>
+        </div>
+        <div class="fixed-btns-left">
+            <a href="mailto:mail@camiloliveira.com" class="fixed-anchor">CONTACT</a>
+        </div>
+        <div class="fixed-btns-right">
+            <button id="about-btn" class="fixed-btn">ABOUT</button>
+        </div>
     </section>
 
     <!-- SECOND SECTION -->
     <div id="second-section" class="container second-section">
-      <div class="left-side">
-        <div id="slideshow-container">
-          <div class="slide fade">
-            <img src="blue-1.jpg" alt="Camisa - Ângulo 1">
-          </div>
-          <div class="slide fade">
-            <img src="blue-2.jpg" alt="Camisa - Ângulo 2">
-          </div>
+        <div class="left-side">
+            <div id="slideshow-container">
+                <div class="slide fade">
+                    <img src="blue-1.jpg" alt="Camisa - Ângulo 1">
+                </div>
+                <div class="slide fade">
+                    <img src="blue-2.jpg" alt="Camisa - Ângulo 2">
+                </div>
+                <div class="slide fade">
+                    <img src="pink-1.jpg" alt="Camisa - Ângulo 1">
+                </div>
+                <div class="slide fade">
+                    <img src="pink-2.jpg" alt="Camisa - Ângulo 2">
+                </div>
+                <div class="slide fade">
+                    <img src="white-1.jpg" alt="Camisa - Ângulo 1">
+                </div>
+                <div class="slide fade">
+                    <img src="white-2.jpg" alt="Camisa - Ângulo 2">
+                </div>
+                <div class="slide fade">
+                    <img src="lilac-1.jpg" alt="Camisa - Ângulo 1">
+                </div>
+                <div class="slide fade">
+                    <img src="lilac-2.jpg" alt="Camisa - Ângulo 2">
+                </div>
+                <div class="slide fade">
+                    <img src="mint-1.jpg" alt="Camisa - Ângulo 1">
+                </div>
+                <div class="slide fade">
+                    <img src="mint-2.jpg" alt="Camisa - Ângulo 2">
+                </div>
+                <div class="slide fade">
+                    <img src="creamstripesnavy-1.jpg" alt="Camisa - Ângulo 1">
+                </div>
+                <div class="slide fade">
+                    <img src="creamstripesnavy-2.jpg" alt="Camisa - Ângulo 2">
+                </div>
 
-          <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
-          <button class="next" onclick="changeSlide(1)">&#10095;</button>
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </div>
         </div>
 
-      </div>
-      <div class="right-side">
-        <h2 class="section-title">Freelancer Shirt</h2>
+        <div class="right-side">
+            <h2 class="section-title">Freelancer Shirt</h2>
+            <div class="right-side-content">
+                <p>Inspired by the businessman shirt, the Freelancer Shirt offers a 
+                relaxed fit to the staple blue, white, and pink shirts traditionally 
+                worn in corporate settings. Designed to be genderless, the Freelancer
+                Shirt adds style to the unstable life of freedom and flexibility.</p>
+                <p>Made in limited quantities from premium Italian stock fabrics and 
+                available in six different colors, the Freelancer Shirt will
+                look great on you when you finally decide to quit your 9-to-5 job,
+                or on those midweek days when you have no work and still do absolutely
+                nothing (and probably feeling guilty about it).</p>
 
-        <div class="right-side-content">
-          <p>Inspired by the businessman shirt, the Freelancer Shirt offers a 
-            relaxed fit to the staple blue, white, and pink shirts traditionally 
-            worn in corporate settings. Designed to be genderless, the Freelancer
-             Shirt adds style to the unstable life of freedom and flexibility. </p>
-          <p>Made in limited quantities from premium Italian stock fabrics and 
-            available in six different colors, the Freelancer Shirt will
-             look great on you when you finally decide to quit your 9-to-5 job,
-              or on those midweek days when you have no work and still do absolutely
-               nothing (and probably feeling guilty about it). </p>
+                <div id="color-selector">
+                    <select id="color" onchange="changeColor()">
+                        <option value="blue">Blue - 76% Cotton 24% Silk - €180</option>
+                        <option value="pink">Pink - 100% Cotton - €160</option>
+                        <option value="white">White - 55% Cotton 45% Silk - €180</option>
+                        <option value="lilac">Lilac - 76% Cotton 24% Silk - €180</option>
+                        <option value="mint">Mint - 100% Cotton - €160</option>
+                        <option value="creamstripesnavy">Cream/Navy - 100% Cotton - €160</option>
+                    </select>
+                </div>
 
-          <div id="color-selector">
-            <select id="color" onchange="changeColor()">
-              <option value="blue">Blue - 76% Cotton 24% Silk - €180</option>
-              <option value="pink">Pink - 100% Cotton - €160</option>
-              <option value="white">White - 55% Cotton 45% Silk - €180</option>
-              <option value="lilac">Lilac - 76% Cotton 24% Silk -
-                €180</option>
-              <option value="mint">Mint - 100% Cotton - €160</option>
-              <option value="creamstripesnavy">Cream/Navy - 100% Cotton - €160</option>
-            </select>
-          </div>
+                <p>Shirts are oversized fit and genderless<br>
+                Three sizes: S/M, M/L, L/XL<br>
+                Pointed collar<br>
+                Mother-of-pearl buttons<br>
+                Asymmetric hem<br>
+                A5 Single chest pocket<br>
+                Handmade in limited quantities in Italy</p>
 
-          <p>Shirts are oversized fit and genderless<br>
-            Three sizes: S/M, M/L, L/XL<br>
-            Pointed collar<br>
-            Mother-of-pearl buttons<br>
-            Assymetric hem<br>
-            A5 Single chest pocket<br>
-            Handmade in limited quantities in Italy</p>
-
-          <p>
-
-          </p>
-
-          <div class="btns-container">
-            <a href="mailto:mail@camiloliveira.com"
-              class="simple-btn">REQUEST</a>
-            <p>
-            </p>
-            <button id="size-guide" class="simple-btn">Size Guide</button>
-            <button id="shipping-return" class="simple-btn">Shipping and
-              Return</button>
-
-          </div>
-
+                <div class="btns-container">
+                    <a href="mailto:mail@camiloliveira.com" class="simple-btn">REQUEST</a>
+                    <button id="size-guide" class="simple-btn">Size Guide</button>
+                    <button id="shipping-return" class="simple-btn">Shipping and Return</button>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
 
     <!-- Modals -->
     <div id="about-modal" class="modal">
-      <div class="modal-wrapper">
-        <span class="close">X</span>
-        <p class="modal-content">
-          This project is the materialization of my spontaneous
-          approach to design. In the shape of a shirt, I learn and I share.
-          I use the proccess of making this garment as an exercise for my
-          life practice. Curating and sewing come together in seasonal drops.
-        </p>
-        <p>
-
-        </p>
-        <p class="modal-content">
-
-          Every garment is handmade in Italy, produced with premium
-          stock fabrics in limited quantities. Once sold out, they
-          will not be reproduced.
-        </p>
-        <a target="_blank" class="instagram-anchor"
-          href="https://www.instagram.com/camiloliveira">
-          instagram
-        </a>
-      </div>
+        <div class="modal-wrapper">
+            <span class="close">X</span>
+            <p class="modal-content">
+                This project is the materialization of my spontaneous
+                approach to design. In the shape of a shirt, I learn and I share.
+                I use the process of making this garment as an exercise for my
+                life practice. Curating and sewing come together in seasonal drops.
+            </p>
+            <p class="modal-content">
+                Every garment is handmade in Italy, produced with premium
+                stock fabrics in limited quantities. Once sold out, they
+                will not be reproduced.
+            </p>
+            <a target="_blank" class="instagram-anchor" href="https://www.instagram.com/camiloliveira">
+                instagram
+            </a>
+        </div>
     </div>
 
     <div id="shipping-modal" class="modal">
-      <div class="modal-wrapper wrapper-sm">
-        <span class="close">X</span>
-        <h3 class="modal-title-sm">SHIPPING AND RETURN</h3>
-        <p class="modal-content-sm">
-          SHIPPING:
-        </p>
-        <p class="modal-content-sm">
-          Currently, all shipping is handled directly, with options for hand
-          delivery in Milan or mailing within the EU/Internationally. Shipping
-          costs are calculated separately and added to the order.
-        </p>
-        <p class="modal-content-sm">
-          RETURN:
-        </p>
-        <p class="modal-content-sm">
-          Given the limited production scale, exchanging for a different size
-          or color may present challenges. Exchanges are only allowed within the
-          same collection, with the original tag, and within a 30-day period
-          from
-          the date of purchase.
-        </p>
-        <p class="modal-content-sm">
-          Please send and email to mail@camiloliveira.com with subject "Return"
-          and register your return before sending. Return shipping costs will
-          not be refunded.
-        </p>
-        <p class="modal-content-sm">
-          Take a moment to carefully read the care instructions on the inside
-          label
-          of your shirt. Shirts will not be eligible for return or refund if
-          they have been misused or poorly cared for during washing.
-        </p>
-      </div>
+        <div class="modal-wrapper wrapper-sm">
+            <span class="close">X</span>
+            <h3 class="modal-title-sm">SHIPPING AND RETURN</h3>
+            <p class="modal-content-sm">SHIPPING:</p>
+            <p class="modal-content-sm">
+                Currently, all shipping is handled directly, with options for hand
+                delivery in Milan or mailing within the EU/Internationally. Shipping
+                costs are calculated separately and added to the order.
+            </p>
+            <p class="modal-content-sm">RETURN:</p>
+            <p class="modal-content-sm">
+                Given the limited production scale, exchanging for a different size
+                or color may present challenges. Exchanges are only allowed within the
+                same collection, with the original tag, and within a 30-day period
+                from the date of purchase.
+            </p>
+            <p class="modal-content-sm">
+                Please send an email to mail@camiloliveira.com with subject "Return"
+                and register your return before sending. Return shipping costs will
+                not be refunded.
+            </p>
+            <p class="modal-content-sm">
+                Take a moment to carefully read the care instructions on the inside
+                label of your shirt. Shirts will not be eligible for return or refund if
+                they have been misused or poorly cared for during washing.
+            </p>
+        </div>
     </div>
 
     <div id="size-guide-modal" class="modal">
-      <div class="modal-wrapper wrapper-sm">
-        <span class="close">X</span>
-        <img src="size-guide.png" alt="Image">
-      </div>
+        <div class="modal-wrapper wrapper-sm">
+            <span class="close">X</span>
+            <img src="size-guide.png" alt="Size Guide">
+        </div>
     </div>
 
     <script type="text/javascript" src="script.js"></script>
-  </body>
+</body>
 </html>

@@ -16,7 +16,6 @@ body {
   overflow: hidden;
 }
 
-
 .slide {
   display: none;
 }
@@ -424,11 +423,3 @@ p.modal-content + p {
   }  
 
   .prev,
-  .next {
-    top: 50%;
-  }
-
-  #size-guide-modal img {
-    margin: auto;
-  }
-}
