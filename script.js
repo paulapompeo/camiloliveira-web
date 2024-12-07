@@ -60,7 +60,10 @@ const shirts = {
   white: ['white-1.jpg', 'white-2.jpg'],
   lilac: ['lilac-1.jpg', 'lilac-2.jpg'],
   mint: ['mint-1.jpg', 'mint-2.jpg'],
-  creamstripesnavy: ['creamstripesnavy-1.jpg', 'creamstripesnavy-2.jpg']
+  creamstripesnavy: ['creamstripesnavy-1.jpg', 'creamstripesnavy-2.jpg'],
+  stripes: ['stripes-1.jpg', 'stripes-2.jpg'], // New color
+  l_blue: ['l_blue-1.jpg', 'l_blue-2.jpg'],   // New color
+  black: ['black-1.jpg', 'black-2.jpg']      // New color
 };
 
 let currentColor = 'blue'; // Default color
