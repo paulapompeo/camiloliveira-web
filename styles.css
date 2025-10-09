@@ -83,7 +83,7 @@ select {
 }
 
 .first-section {
-  background-image: url('camiloliveira_landing_freelancer_web.png');
+  background-image: url('web_landing_newshirts.png');
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -347,7 +347,7 @@ p.modal-content + p {
   .first-section {
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url('camiloliveira_landing_freelancer_mobile.png');
+    background-image: url('mobile_landing.png');
 
   }
   
