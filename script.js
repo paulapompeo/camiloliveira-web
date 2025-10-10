@@ -55,18 +55,15 @@ document.addEventListener('keydown', function(event) {
 
 // Slideshow logic
 const shirts = {
-  blue: ['blue-1.jpg', 'blue-2.jpg'],
-  pink: ['pink-1.jpg', 'pink-2.jpg'],
-  white: ['white-1.jpg', 'white-2.jpg'],
-  lilac: ['lilac-1.jpg', 'lilac-2.jpg'],
-  mint: ['mint-1.jpg', 'mint-2.jpg'],
-  creamstripesnavy: ['creamstripesnavy-1.jpg', 'creamstripesnavy-2.jpg'],
-  stripes: ['stripes-1.jpg', 'stripes-2.jpg'], // New color
-  l_blue: ['l_blue-1.jpg', 'l_blue-2.jpg'],   // New color
-  black: ['black-1.jpg', 'black-2.jpg']      // New color
+  charcoal: ['charcoal_1.jpg', 'charcoal_2.jpg'],
+  blue_squares: ['blue_squares_1.jpg', 'blue_squares_2.jpg'],
+  sage: ['sage_1.jpg', 'sage_2.jpg'],
+  sand_squares: ['sand_squares_1.jpg', 'sand_squares_2.jpg'],
+  white_stripes: ['white_stripes_1.jpg', 'white_stripes_2.jpg'],
+  powder: ['powder_1.jpg', 'powder_2.jpg'],
 };
 
-let currentColor = 'blue'; // Default color
+let currentColor = 'charcoal'; // Default color
 let currentSlide = 0;
 let allColors = Object.keys(shirts); // All color options
 let colorIndex = 0; // Index for cycling through colors

@@ -150,7 +150,7 @@ section {
 /* substituir pela imagem */
 h2.subtitle {
   margin-top: 200px;
-  color: rgb(255, 0, 0);
+  color: rgb(255, 255, 0);
   text-align: center;
   font-size: 150px;
   font-family: Times;
@@ -186,13 +186,13 @@ a.simple-btn  {
   cursor: pointer;
   border: none;
   border-radius: 5px;
-  background-color: rgb(255, 0, 0); /* Blue background color */
-  color: #ffffff; /* White text color */
+  background-color: rgb(255, 255, 0); /* Blue background color */
+  color: #000000; /* White text color */
   
 }
 
 .section-title {
-  color: rgb(255, 0, 0);
+  color: rgb(255, 255, 0);
   font-size: 60px;
   margin-left: 48px;
   font-family: Times;
